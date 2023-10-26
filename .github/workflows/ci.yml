@@ -24,3 +24,10 @@ jobs:
     - name: Build Docker file
       run: |
         docker build -t ghcr.io/docllama/llama-2-7b-chat -f Dockerfile.7b.cpu .
+
+    - name: Semantic Release
+      run: | 
+        npm i -D @semantic-release/exec
+        npm i -D @semantic-release-plus/docker
+        npm i -D @semantic-release/git
+        npx semantic-release

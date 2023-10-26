@@ -8,7 +8,7 @@ Open AI API compatible docker images. We select models and package them in high 
 
 ## Features
 
-- API implementes batching meaning when multiple users make a request the API serves them in parallel.
+- API implements batching meaning when multiple users make a request the API serves them in parallel.
 - The docker image contains the model, no needs to download the model in another step.
 - Images are optimized for different architectures [coming soon]
 

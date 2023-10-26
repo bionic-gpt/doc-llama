@@ -25,6 +25,7 @@ jobs:
     - name: Build Docker file
       run: |
         docker build -t ghcr.io/bionic-gpt/llama-2-7b-chat:latest -f Dockerfile.7b.cpu .
+        docker push ghcr.io/bionic-gpt/llama-2-7b-chat:latest
 
     - name: Semantic Release
       run: | 

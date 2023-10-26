@@ -4,6 +4,6 @@ Open AI API compatible docker images. We select models and package them in high 
 
 |Image Name   |Parameters   | Type  | Context Size  | Image Size  | Quantization  | Ram Requirements  |
 |---|---|---|---|---|---|---|
-|llama-2-7b-chat:1.3| 7b  | LLama 2  | 2K | 5GB  | Yes  | 16GB  |
+|llama-2-7b-chat:1.0.2| 7b  | LLama 2  | 2K | 5GB  | Yes  | 16GB  |
 
 ## 

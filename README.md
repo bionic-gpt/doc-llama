@@ -6,6 +6,12 @@ Open AI API compatible docker images. We select models and package them in high 
 |---|---|---|---|---|---|---|
 |llama-2-7b-chat:1.0.2| 7b  | LLama 2  | 2K | 5GB  | Yes  | 16GB  |
 
+## Features
+
+- API implementes batching meaning when multiple users make a request the API serves them in parallel.
+- The docker image contains the model, no needs to download the model in another step.
+- Images are optimized for different architectures [coming soon]
+
 ## Startup the API
 
 ```sh

@@ -1,0 +1,23 @@
+{
+    "branches": ["main"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      ["@semantic-release-plus/docker", {
+          "name": "ghcr.io/bionic-gpt/llama-2-7b-chat:latest",
+          "skipLogin": true
+      }],
+      ["@semantic-release/exec", {
+        "publishCmd": "./update-config.sh ${nextRelease.version}",
+        "execCwd": "./.github/workflows"
+      }],
+      ["@semantic-release/exec", {
+        "publishCmd": "./update-version.sh ${nextRelease.version}",
+        "execCwd": "./.github/workflows"
+      }],
+      ["@semantic-release/exec", {
+        "publishCmd": "./update-git.sh ${nextRelease.version}",
+        "execCwd": "./.github/workflows"
+      }]
+    ]
+  }

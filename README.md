@@ -1,7 +1,9 @@
-## DocLLama
+## Docker Containers for a local OPEN AI compatible API
 
 Open AI API compatible docker images. We select models and package them in high performance docker containers.
 
-|Parameters   | Type  | Context Size  | Image Size  | Quantization  | Ram Requirements  |
-|---|---|---|---|---|---|
-| 7b  | Mistral  | 8K | 5GB  | Yes  | 16GB  |
+|Image Name   |Parameters   | Type  | Context Size  | Image Size  | Quantization  | Ram Requirements  |
+|---|---|---|---|---|---|---|
+|llama-2-7b-chat:1.3| 7b  | LLama 2  | 2K | 5GB  | Yes  | 16GB  |
+
+## 

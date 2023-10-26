@@ -1,4 +1,4 @@
-name: Build Inages
+name: Build Images
 on:
   push:
     branches:
@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build Docker file
       run: |
-        docker build -t ghcr.io/docllama/llama-2-7b-chat -f Dockerfile.7b.cpu .
+        docker build -t ghcr.io/bionic-gpt/llama-2-7b-chat -f Dockerfile.7b.cpu .
 
     - name: Semantic Release
       run: | 

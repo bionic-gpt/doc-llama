@@ -21,11 +21,22 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        
-    - name: Build Docker file
-      run: |
-        docker build -t ghcr.io/bionic-gpt/llama-2-7b-chat:latest -t bionic-gpt/llama-2-7b-chat:latest -f Dockerfile.7b.cpu .
-        docker push ghcr.io/bionic-gpt/llama-2-7b-chat:latest
+
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v1
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v1
+
+
+    - name: Build and push for ARM and AMD
+      uses: docker/build-push-action@v2
+      with:
+        context: ./
+        file: ./Dockerfile.7b.cpu
+        platforms: linux/amd64,linux/arm64
+        push: true
+        tags: bionic-gpt/llama-2-7b-chat:latest
 
     - name: Semantic Release
       run: | 

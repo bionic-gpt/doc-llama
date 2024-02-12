@@ -22,7 +22,7 @@ docker run -it --rm -p 3000:11434 ghcr.io/bionic-gpt/llama-2-7b-chat:1.0.5
 
 ```sh
 curl http://localhost:3000/v1/chat/completions -H "Content-Type: application/json" -d '{
-     "model": "llama2-chat", 
+     "model": "llama2", 
      "messages": [{"role": "user", "content": "How are you?"}],
      "temperature": 0.1 
    }'

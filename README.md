@@ -15,7 +15,7 @@ Open AI API compatible docker images. We select models and package them in high 
 ## Startup the API
 
 ```sh
-docker run -it --rm -p 3000:3000 ghcr.io/bionic-gpt/llama-2-7b-chat:1.0.5
+docker run -it --rm -p 3000:11434 ghcr.io/bionic-gpt/llama-2-7b-chat:1.0.5
 ```
 
 ## Try it out

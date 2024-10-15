@@ -1,3 +1,0 @@
-FROM ollama/ollama:0.1.24
-
-RUN nohup bash -c "ollama serve &" && sleep 20 && ollama pull llama2

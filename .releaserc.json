@@ -4,7 +4,11 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     ["@semantic-release-plus/docker", {
-        "name": "ghcr.io/bionic-gpt/llama-3-8b-chat:latest",
+        "name": "ghcr.io/bionic-gpt/llama-3.2-3b:latest",
+        "skipLogin": true
+    }],
+    ["@semantic-release-plus/docker", {
+        "name": "ghcr.io/bionic-gpt/embeddings:latest",
         "skipLogin": true
     }],
     ["@semantic-release/exec", {

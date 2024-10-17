@@ -4,9 +4,9 @@ Open AI API compatible docker images. We select models and package them in high 
 
 |Image Name   |Parameters   | Type  | Context Size  | Image Size  | Quantization  | Ram Requirements  |
 |---|---|---|---|---|---|---|
-|llama-2-7b-chat:1.1.2| 7b  | LLama 2  | 2K | 5GB  | Yes  | 16GB  |
-|llama-3.2-3b:1.1.2| 7b  | LLama 3.2  | 2K | 5GB  | Yes  | 16GB  |
-|embeddings:1.1.2| 7b  | bge:small-en-v1.5-q8_0  | 2K | 5GB  | Yes  | 16GB  |
+|llama-2-7b-chat:1.1.3| 7b  | LLama 2  | 2K | 5GB  | Yes  | 16GB  |
+|llama-3.2-3b:1.1.3| 7b  | LLama 3.2  | 2K | 5GB  | Yes  | 16GB  |
+|embeddings:1.1.3| 7b  | bge:small-en-v1.5-q8_0  | 2K | 5GB  | Yes  | 16GB  |
 
 ## Features
 
@@ -17,7 +17,7 @@ Open AI API compatible docker images. We select models and package them in high 
 ## Startup the API
 
 ```sh
-docker run -it --rm -p 3000:11434 ghcr.io/bionic-gpt/llama-3.2-3b:1.1.2:1.1.1
+docker run -it --rm -p 3000:11434 ghcr.io/bionic-gpt/llama-3.2-3b:1.1.3:1.1.1
 ```
 
 ## Try it out

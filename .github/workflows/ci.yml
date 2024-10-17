@@ -27,7 +27,7 @@ jobs:
         docker build -t ghcr.io/bionic-gpt/llama-3.2-3b:latest -t bionic-gpt/llama-3.2-3b:latest -f Dockerfile.llama3.2-3b.cpu .
         docker push ghcr.io/bionic-gpt/llama-3.2-3b:latest
 
-        docker build -t ghcr.io/bionic-gpt/llama-3-8b-chat:latest -t bionic-gpt/llama-3-8b-chat:latest -f Dockerfile.llama-3-8b-chat .
+        docker build -t ghcr.io/bionic-gpt/llama-3-8b-chat:latest -t bionic-gpt/llama-3-8b-chat:latest -f Dockerfile.llama3-8b-chat .
         docker push ghcr.io/bionic-gpt/llama-3-8b-chat:latest
 
         docker build -t ghcr.io/bionic-gpt/embeddings:latest -t bionic-gpt/embeddings:latest -f Dockerfile.embeddings .

@@ -8,6 +8,10 @@
         "skipLogin": true
     }],
     ["@semantic-release-plus/docker", {
+        "name": "ghcr.io/bionic-gpt/llama-3-8b-chat:latest",
+        "skipLogin": true
+    }],
+    ["@semantic-release-plus/docker", {
         "name": "ghcr.io/bionic-gpt/embeddings:latest",
         "skipLogin": true
     }],
